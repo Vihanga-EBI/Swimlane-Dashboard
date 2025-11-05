@@ -1,24 +1,41 @@
 "use client";
-
 import { Task } from "@/types/task";
-import { BoltIcon, LinkIcon, CircleAlert, BellIcon, MessageCircleMoreIcon, CalendarRangeIcon } from "lucide-react";
+import { ZapIcon, LinkIcon, CircleAlert, BellIcon, MessageCircleMoreIcon, CalendarRangeIcon } from "lucide-react";
 import BaseIcon from "../../public/icons/BaseIcon";
+import { useDraggable } from "@dnd-kit/core";
 
 interface TaskCardProps {
   task: Task;
 }
 
 export default function TaskCard({ task }: TaskCardProps) {
-  console.log("TaskCard task data:", task);
+  // Enable dragging functionality for each task card
+  const { attributes, listeners, setNodeRef, transform, isDragging } =
+    useDraggable({
+      id: task.id,
+      data: {
+        type: "task",
+        task,
+      },
+    });
+
+  // Apply movement style when dragging
+  const style = transform
+    ? {
+      transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
+    }
+    : undefined;
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case "Reserch":
+      case "Research":
         return "bg-[var(--category-research)]";
       case "Design":
         return "bg-[var(--category-design)]";
       case "Other":
         return "bg-[var(--category-other)]";
+      case "UX Research":
+        return "bg-[var(--category-ux-research)]";
       case "Feedback":
         return "bg-[var(--category-feedback)]";
       case "Presentation":
@@ -30,6 +47,7 @@ export default function TaskCard({ task }: TaskCardProps) {
     }
   };
 
+  // Format date
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const today = new Date();
@@ -47,6 +65,7 @@ export default function TaskCard({ task }: TaskCardProps) {
     })}`;
   };
 
+  // Display special action icons
   const getSpecialActionIcon = (type: string, count: number) => {
     switch (type) {
       case "reports":
@@ -71,13 +90,27 @@ export default function TaskCard({ task }: TaskCardProps) {
             <span className="text-primary font-medium">Group Call</span>
           </>
         );
+      case "report":
+        return (
+          <>
+            <CircleAlert className="h-3 w-3 text-error" />
+            <span className="text-error font-medium">2 Reports</span>
+          </>
+        );
       default:
         return null;
     }
   };
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-3 lg:p-4 cursor-grab hover:shadow-md transition-shadow duration-200">
+    <div
+      ref={setNodeRef}
+      style={style}
+      {...listeners}
+      {...attributes}
+      className={`bg-white rounded-lg border border-gray-200 p-3 lg:p-4 cursor-grab hover:shadow-md transition-shadow duration-200
+        ${isDragging ? "opacity-50 shadow-lg" : ""}`}
+    >
       {task.category && (
         <div className="flex items-center mb-3">
           <div
@@ -103,7 +136,7 @@ export default function TaskCard({ task }: TaskCardProps) {
           className={`
             px-2 py-1 text-xs font-medium rounded text-text-natural-5 flex items-center capitalize bg-text-natural-7`}
         >
-          <BoltIcon className="h-3 w-3 mr-1 text-text-natural-5 stroke-[2]" />
+          <ZapIcon className="h-3 w-3 mr-1 text-text-natural-5 stroke-[2]" />
           {task.priority}
         </span>
       </div>

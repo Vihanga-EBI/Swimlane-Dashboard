@@ -41,7 +41,7 @@ export default function Appbar() {
           />
         </div>
 
-        <div className="p-4 border-b border-border border-r">
+        <div className="p-4 border-border border-r">
           <div className="flex items-center justify-between bg-card-bg rounded-lg p-3 shadow-sm border border-border">
             <div className="flex items-center">
               <div className="w-8 h-8 bg-text-natural-3 rounded-full flex items-center justify-center mr-3">
@@ -59,7 +59,7 @@ export default function Appbar() {
           </div>
         </div>
 
-        <nav className="flex-1 p-4 border-r border-gray-200">
+        <nav className="flex-1 p-4 border border-gray-200">
           <ul className="space-y-2">
             <li>
               <a
@@ -143,7 +143,7 @@ export default function Appbar() {
           </ul>
         </nav>
 
-        <div className="p-4 border-t border-gray-200">
+        <div className="p-4 border border-gray-200">
           <a
             href="#"
             className="flex items-center px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg mb-2"

@@ -110,8 +110,28 @@
     "attachments": 0,
     "hasImage": true
   },
-  {
+    {
     "id": "8",
+    "title": "Filter Sorting",
+    "description": "Create filter and sorting controls for the interface",
+    "status": "in-progress",
+    "priority": "low",
+    "assignee": "Dan Ham",
+    "dueDate": "2024-11-23",
+    "tags": ["research"],
+    "category": "UX Research",
+    "comments": 4,
+    "attachments": 1,
+    "links": 2,
+    "specialActions": [
+      {
+        "type": "stream",
+        "label": "Stream"
+      }
+    ]
+  },
+  {
+    "id": "9",
     "title": "Prototype",
     "description": "Create interactive prototype",
     "status": "approved",
@@ -124,7 +144,7 @@
     "attachments": 243
   },
   {
-    "id": "9",
+    "id": "10",
     "title": "Detail Page",
     "description": "Design and implement the detail page",
     "status": "approved",
@@ -138,7 +158,7 @@
     "hasImage": true
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "Animation preloaders",
     "description": "Create animation preloaders for the interface",
     "status": "approved",
@@ -150,8 +170,22 @@
     "comments": 4,
     "attachments": 9
   },
+    {
+    "id": "12",
+    "title": "Sorting category",
+    "description": "Create sorting category for the interface",
+    "status": "approved",
+    "priority": "high",
+    "assignee": "Sam Javis",
+    "dueDate": "2024-12-14",
+    "tags": ["research"],
+    "category": "UX Research",
+    "comments": 28,
+    "attachments": 6,
+    "hasImage": true
+  },
   {
-    "id": "11",
+    "id": "13",
     "title": "Group Management",
     "description": "Manage group activities and coordination",
     "status": "reject",
@@ -171,7 +205,7 @@
     ]
   },
   {
-    "id": "12",
+    "id": "14",
     "title": "Design System",
     "description": "Create a comprehensive design system",
     "status": "reject",
@@ -180,12 +214,18 @@
     "dueDate": "2024-03-15",
     "tags": ["design", "system"],
     "category": "Design",
-    "comments": 3,
-    "attachments": 8,
-    "actionButton": "2 Reports"
+    "comments": 8,
+    "attachments": 1,
+    "links": 3,
+    "specialActions": [
+      {
+        "type": "report",
+        "label": "2 Reports"
+      }
+    ]
   },
   {
-    "id": "13",
+    "id": "15",
     "title": "Slider controls",
     "description": "Implement slider controls for the interface",
     "status": "reject",
@@ -198,7 +238,7 @@
     "attachments": 31
   },
   {
-    "id": "14",
+    "id": "16",
     "title": "Slider controls",
     "description": "Design slider controls for the interface",
     "status": "reject",

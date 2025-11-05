@@ -24,6 +24,7 @@
   /* Category Colors */
   --category-research: #aee753;
   --category-design: #f90430;
+  --category-ux-research: #ffa800;
   --category-other: #777e90;
   --category-feedback: #3772ff;
   --category-presentation: #ff5c00;
@@ -68,6 +69,7 @@
   --color-category-research: var(--category-research);
   --color-category-design: var(--category-design);
   --color-category-other: var(--category-other);
+  --color-category-ux-research: var(--category-ux-research);
   --color-category-feedback: var(--category-feedback);
   --color-category-presentation: var(--category-presentation);
   --color-category-interface: var(--category-interface);

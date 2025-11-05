@@ -4,7 +4,7 @@ import BaseIcon from "../../public/icons/BaseIcon";
 
 export default function SwimlaneHeader() {
   return (
-    <div className="bg-white border-b border-gray-200 px-4 lg:px-6 py-4 lg:py-6">
+    <div className="bg-white border-gray-200 px-4 lg:px-6 py-4 lg:py-6">
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
