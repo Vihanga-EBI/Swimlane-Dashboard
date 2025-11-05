@@ -36,8 +36,8 @@ export default function Swimlane({ status, tasks, title }: SwimlaneProps) {
   };
 
   return (
-    <div className="flex-1 min-w-0 w-full lg:w-auto border-1">
-      <div className={`bg-white px-3 border-b-2 lg:px-4 py-2 lg:py-3`}>
+    <div className="flex-1 min-w-64 border border-gray-200 bg-white shadow-sm">
+      <div className={`px-3 border-b-2 lg:px-4 py-2 lg:py-3 rounded-t-lg`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <h2

@@ -71,9 +71,9 @@ export default function Page() {
 
   return (
     <AdminLayout>
-      <div className="flex-1 overflow-x-auto mobile-scroll">
+      <div className="flex-1">
         <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
-          <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 min-w-max touch-manipulation">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 min-w-max">
             {swimlanes.map((swimlane) => (
               <Swimlane
                 key={swimlane.status}

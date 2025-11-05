@@ -27,8 +27,7 @@ export default function Appbar() {
 
       <div
         className={`
-        w-64 bg-white h-screen flex flex-col
-        fixed lg:static z-50 transform transition-transform duration-300 ease-in-out
+        w-64 bg-white h-screen flex flex-col fixed z-50
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
       `}
         style={{ marginTop: "8px" }}
@@ -50,7 +49,7 @@ export default function Appbar() {
 
               <div>
                 <div className="text-xs text-text-muted">workspace</div>
-                <div className="text-sm font-medium text-text-natural-3">
+                        <div className="text-sm font-medium text-text-natural-3">
                   Root folder
                 </div>
               </div>
@@ -59,7 +58,7 @@ export default function Appbar() {
           </div>
         </div>
 
-        <nav className="flex-1 p-4 border border-gray-200">
+        <nav className="flex-1 p-4 border border-gray-200 overflow-y-auto">
           <ul className="space-y-2">
             <li>
               <a
