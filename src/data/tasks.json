@@ -1,0 +1,213 @@
+[
+  {
+    "id": "1",
+    "title": "User interview",
+    "description": "Conduct user interviews to gather feedback",
+    "status": "todo",
+    "priority": "low",
+    "assignee": "Michael Chen",
+    "dueDate": "2024-02-20",
+    "tags": ["research"],
+    "category": "Research",
+    "comments": 2,
+    "attachments": 2,
+    "links": 1
+  },
+  {
+    "id": "2",
+    "title": "Design System",
+    "description": "Create a comprehensive design system",
+    "status": "todo",
+    "priority": "medium",
+    "assignee": "Emily Rodriguez",
+    "dueDate": "2024-02-25",
+    "tags": ["design", "system"],
+    "category": "Design",
+    "comments": 8,
+    "attachments": 3,
+    "links": 2,
+    "specialActions": [
+      {
+        "type": "reports",
+        "count": 2,
+        "label": "2 Reports"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Speech",
+    "description": "Prepare presentation speech",
+    "status": "todo",
+    "priority": "low",
+    "assignee": "James Wilson",
+    "dueDate": "2024-03-05",
+    "tags": ["presentation"],
+    "category": "Other",
+    "comments": 3,
+    "attachments": 1,
+    "links": 2,
+    "specialActions": [
+      {
+        "type": "stream",
+        "label": "Stream"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Wireframe",
+    "description": "Create wireframes for the main user flows",
+    "status": "todo",
+    "priority": "high",
+    "assignee": "Sophia Lee",
+    "dueDate": "2024-02-15",
+    "tags": ["design", "wireframe"],
+    "category": "Design",
+    "comments": 2,
+    "attachments": 4,
+    "links": 3
+  },
+  {
+    "id": "5",
+    "title": "UI Design",
+    "description": "Create user interface designs for the application",
+    "status": "in-progress",
+    "priority": "high",
+    "assignee": "Daniel Kim",
+    "dueDate": "2024-02-22",
+    "tags": ["design"],
+    "category": "Design",
+    "comments": 2,
+    "attachments": 2,
+    "links": 1
+  },
+  {
+    "id": "6",
+    "title": "Check Clients Feedback",
+    "description": "Review and analyze client feedback",
+    "status": "in-progress",
+    "priority": "low",
+    "assignee": "Olivia Martinez",
+    "dueDate": "2024-05-10",
+    "tags": ["feedback", "review"],
+    "category": "Feedback",
+    "comments": 8,
+    "attachments": 0,
+    "hasImage": true
+  },
+  {
+    "id": "7",
+    "title": "Copyright",
+    "description": "Handle copyright and legal matters",
+    "status": "in-progress",
+    "priority": "low",
+    "assignee": "William Brown",
+    "dueDate": "2024-05-15",
+    "tags": ["legal", "copyright"],
+    "category": "Presentation",
+    "comments": 4,
+    "attachments": 0,
+    "hasImage": true
+  },
+  {
+    "id": "8",
+    "title": "Prototype",
+    "description": "Create interactive prototype",
+    "status": "approved",
+    "priority": "low",
+    "assignee": "Ava Johnson",
+    "dueDate": "2024-02-18",
+    "tags": ["prototype", "interactive"],
+    "category": "Research",
+    "comments": 35,
+    "attachments": 243
+  },
+  {
+    "id": "9",
+    "title": "Detail Page",
+    "description": "Design and implement the detail page",
+    "status": "approved",
+    "priority": "low",
+    "assignee": "Ethan Davis",
+    "dueDate": "2024-03-20",
+    "tags": ["design", "page"],
+    "category": "Design",
+    "comments": 6,
+    "attachments": 28,
+    "hasImage": true
+  },
+  {
+    "id": "10",
+    "title": "Animation preloaders",
+    "description": "Create animation preloaders for the interface",
+    "status": "approved",
+    "priority": "high",
+    "assignee": "Isabella Garcia",
+    "dueDate": "2024-02-12",
+    "tags": ["animation", "ui"],
+    "category": "interface",
+    "comments": 4,
+    "attachments": 9
+  },
+  {
+    "id": "11",
+    "title": "Group Management",
+    "description": "Manage group activities and coordination",
+    "status": "reject",
+    "priority": "low",
+    "assignee": "Noah Smith",
+    "dueDate": "2024-03-25",
+    "tags": ["management", "coordination"],
+    "category": "Other",
+    "comments": 329,
+    "attachments": 0,
+    "links": 0,
+    "specialActions": [
+      {
+        "type": "group-call",
+        "label": "Group Call"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Design System",
+    "description": "Create a comprehensive design system",
+    "status": "reject",
+    "priority": "low",
+    "assignee": "Mia Anderson",
+    "dueDate": "2024-03-15",
+    "tags": ["design", "system"],
+    "category": "Design",
+    "comments": 3,
+    "attachments": 8,
+    "actionButton": "2 Reports"
+  },
+  {
+    "id": "13",
+    "title": "Slider controls",
+    "description": "Implement slider controls for the interface",
+    "status": "reject",
+    "priority": "low",
+    "assignee": "Lucas White",
+    "dueDate": "2024-03-08",
+    "tags": ["controls", "ui"],
+    "category": "interface",
+    "comments": 8,
+    "attachments": 31
+  },
+  {
+    "id": "14",
+    "title": "Slider controls",
+    "description": "Design slider controls for the interface",
+    "status": "reject",
+    "priority": "low",
+    "assignee": "Charlotte Taylor",
+    "dueDate": "2024-03-12",
+    "tags": ["controls", "design"],
+    "category": "Design",
+    "comments": 2,
+    "attachments": 4
+  }
+]
